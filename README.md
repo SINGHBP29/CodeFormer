@@ -163,5 +163,17 @@ This project is licensed under <a rel="license" href="https://github.com/sczhou/
 
 This project is based on [BasicSR](https://github.com/XPixelGroup/BasicSR). Some codes are brought from [Unleashing Transformers](https://github.com/samb-t/unleashing-transformers), [YOLOv5-face](https://github.com/deepcam-cn/yolov5-face), and [FaceXLib](https://github.com/xinntao/facexlib). We also adopt [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) to support background image enhancement. Thanks for their awesome works.
 
+## Changes the some code while Running this in colab
+     # Visualize the results
+    input_folder = 'inputs/cropped_faces'
+    result_folder = f'results/cropped_faces_{w}/restored_faces'
+    input_list = sorted(glob.glob(os.path.join(input_folder, '*')))
+    output_list = sorted(glob.glob(os.path.join(result_folder, '*')))
+    for input_path, output_path in zip(input_list, output_list):
+      img_input = imread(input_path)
+      img_output = imread(output_path)
+      display(img_input, img_output)
+    Here Changes "w" to ### "CODEFORMER_FIDELITY"
+
 ### Contact
 If you have any questions, please feel free to reach me out at `shangchenzhou@gmail.com`. 
