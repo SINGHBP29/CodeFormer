@@ -173,7 +173,7 @@ This project is based on [BasicSR](https://github.com/XPixelGroup/BasicSR). Some
       img_input = imread(input_path)
       img_output = imread(output_path)
       display(img_input, img_output)
-    Here Changes "w" to ### "CODEFORMER_FIDELITY"
+    Here Changes "w" to ### "CODEFORMER_FIDELITY" 
 
 ### Contact
 If you have any questions, please feel free to reach me out at `shangchenzhou@gmail.com`. 
